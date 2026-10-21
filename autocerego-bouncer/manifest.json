@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "autocerego",
+  "version": "1.0.0",
+  "description": "After a while, a donate window shows up and bounces around your screen like the DVD logo.",
+  "permissions": ["alarms", "scripting", "storage", "tabs", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      { "id": "csp_ruleset", "enabled": true, "path": "rules.json" }
+    ]
+  },
+  "action": {
+    "default_title": "autocerego"
+  }
+}
