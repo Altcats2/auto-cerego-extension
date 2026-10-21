@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "autocerego",
   "version": "1.0.0",
-  "description": "After a while, a donate window shows up and bounces around your screen like the DVD logo.",
+  "description": "automatically progress through cerego assignments.",
   "permissions": ["alarms", "scripting", "storage", "tabs", "declarativeNetRequest"],
   "host_permissions": ["<all_urls>"],
   "background": {

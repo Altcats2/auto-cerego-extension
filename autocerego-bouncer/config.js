@@ -3,7 +3,7 @@
 // injected more than once, so nothing here may be a top-level const/let.
 globalThis.DonateBounceConfig = (() => {
   const DEFAULTS = Object.freeze({
-    delayMinutes: 1,
+    delayMinutes: .5,
     donateUrl: 'https://donate.stripe.com/eVq4gygsO4MJfvz4DvgrS00?prefilled_email=none@anonymous.com',
   });
 
@@ -15,9 +15,10 @@ globalThis.DonateBounceConfig = (() => {
   // An empty list means "every page". Examples:
   //   'https://*.cerego.com/*'          -> any cerego page
   //   'https://app.cerego.com/learn/*'  -> only the /learn section
-  const SHOW_ON = [
-    // 'https://*.cerego.com/*',
-  ];
+const SHOW_ON = [
+  'https://*.cerego.com/*',
+  'https://cerego.com/*',
+];
 
   const globToRe = (glob) =>
     new RegExp(
