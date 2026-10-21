@@ -40,7 +40,7 @@
   );
 
   function clickActiveOption() {
-    const delay = 3000 + Math.random() * 2000;
+    const delay = 1000 + Math.random() * 6000;
 
     setTimeout(() => {
       const active = document.querySelector(
