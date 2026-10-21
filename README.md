@@ -8,3 +8,4 @@ A Chrome (MV3) extension that automatically answers cerego assignments.
 
 1. `chrome://extensions` → enable **Developer mode**
 2. **Load unpacked** → select this folder
+3. This extension will now automatically answer and progress through cerego assignments -- auto answering with the correct answer for each question, including listening questions
